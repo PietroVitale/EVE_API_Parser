@@ -25,7 +25,8 @@ Nep = ep_string.count('\n')+1  				#number of endpoint lines
 ep_lines = ep_string.split('\n', Nep)		#endpoint lines
 
 #Overwrite file
-os.remove(file)
+if os.path.isfile(file):
+	os.remove(file)
 
 
 for ep in range(0, Nep-1):
