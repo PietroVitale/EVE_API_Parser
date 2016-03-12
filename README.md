@@ -6,3 +6,6 @@ Create_Classes.py
   
 NewClass.py
   Supporting function for Create_Classes
+
+API_Classes.py
+  Output file with class structure for API endpoints
