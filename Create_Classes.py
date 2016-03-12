@@ -60,10 +60,12 @@ for ep in range(0, Nep-1):
 		#Fix deprecated API endpoints
 		if ep_name == 'Locations':
 			ep_name = 'AssetList'
+			continue
 		if ep_name == 'AccountStatus':
 			ep_type = 'account'
 		if ep_name == 'CharacterInfo':
 			ep_name = 'AccountBalance'
+			continue
 		
 		
 		#Import API
